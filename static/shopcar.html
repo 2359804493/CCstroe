@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopcar</title>
+	<link rel="stylesheet" type="text/css" href="CSS/base.css">
+	<link rel="stylesheet" type="text/css" href="CSS/shopcar.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="header-con">
+				<div class="header-left">
+					<span>网站导航</span>
+					<span>联系客服</span>
+					<span>消息中心</span>
+					<span>收藏夹</span>
+					<span>返回首页</span>
+				</div>
+				<div class="header-right">
+					<span>卖家中心</span>
+					<span>我的果园订单</span>
+					<span>我的账户</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="search">
+		<div class="search-logo">
+			<a href="index.html"><img src="img/logo.png" alt=""></a>
+			<span>| 购物车</span>
+		</div>
+		<div class="search-input">
+			<input type="text"><input type="submit" name="">
+		</div>
+	</div>
+	<div class="main">
+			<div class="title">
+				<span>全部商品(3)</span>
+				<span>降价商品(1)</span>
+				<span>库存紧张(0)</span>
+				<div class="pay">已选商品  (不含运费) <i>￥0.00  </i><button>结算</button></div>
+			</div>
+			<div class="car-item">
+				<div class="check-button">
+					<input type="checkbox">
+					<span>全选</span>
+				</div>
+				<div class="good-info"><span>商品信息</span></div>
+				<div class="good-price"><span>价格</span></div>
+				<div class="good-amount"><span>数量</span></div>
+				<div class="good-sum"><span>金额</span></div>
+				<div class="operate"><span>操作</span></div>
+			</div>
+			<div class="shop-name"><img src="img/shop.png" alt=""><span>店铺：CC旗舰店</span></div>
+
+<!-- 商品列表区 -->
+			<div class="man-table">
+				<div class="main-con">
+					<div class="good-check"><input type="checkbox"></div>
+					<div class="good-img"><img src="img/桑葚.png" alt=""></div>
+					<div class="good-detail"><span>四川攀枝花大芒果新鲜包邮拍2件整箱10斤当季青芒坏果包赔</span></div>
+					<div class="select-box">
+						<p>1kg-2kg(含)</p>
+						<p>套餐1</p>
+					</div>
+					<div class="price-con">
+						<p class="former_price">￥10.00</p>
+						<p class="now_price"><span>5.00</span></p>
+					</div>
+					<div class="good-count">
+						<div class="add">
+							<button class="plus">+</button>
+							<input type="text" class="count" value="1">
+							<button class="reduce">-</button>
+						</div>
+					</div>
+					<div class="total">
+						<outer class="total-price" id="total-price">￥90.00</outer>	
+					</div>
+					<div class="operate-con">
+						<p><a href="#">移入收藏夹</a></p>
+						<p><a href="#">删除</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="man-table">
+				<div class="main-con">
+					<div class="good-check"><input type="checkbox"></div>
+					<div class="good-img"><img src="img/桑葚.png" alt=""></div>
+					<div class="good-detail"><span>四川攀枝花大芒果新鲜包邮拍2件整箱10斤当季青芒坏果包赔</span></div>
+					<div class="select-box">
+						<p>1kg-2kg(含)</p>
+						<p>套餐1</p>
+					</div>
+					<div class="price-con">
+						<p class="former_price">￥10.00</p>
+						<p class="now_price"><span>5.00</span></p>
+					</div>
+					<div class="good-count">
+						<div class="add">
+							<button class="plus">+</button>
+							<input type="text" class="count" value="1">
+							<button class="reduce">-</button>
+						</div>
+					</div>
+					<div class="total">
+						<outer class="total-price" id="total-price">￥90.00</outer>	
+					</div>
+					<div class="operate-con">
+						<p><a href="#">移入收藏夹</a></p>
+						<p><a href="#">删除</a></p>
+					</div>
+				</div>
+			</div>
+			
+<!-- 商品列表区结束 -->
+
+<!-- 结算栏开始 -->
+			<div class="paybar">
+				<div class="paybar-left">
+					<div class="checkAll">
+						<input id="checkAll" type="checkbox" checked>
+						<span>全选</span>
+					</div>
+					<div class="paybar-list">
+						<span><a href="#">删除</a></span>
+						<span><a href="#">移入收藏夹</a></span>
+						<span><a href="#">分享</a></span>
+					</div>
+				</div>
+				<div class="paybar-right">
+					<div class="payButton">
+						<a href="#">结算</a>
+					</div>
+					<div class="paybar-list2">
+						<span>已选商品&nbsp;&nbsp;<span id="total-number">2</span>&nbsp;件</span>
+						<span>合计(不含运费)：￥<span id="total-price">177.00</span></span>
+					</div>
+					
+				</div>
+			</div>
+<!-- 结算栏结束 -->
+
+	</div>
+	
+</body>
+<!-- <script type="text/javascript" src="JS/vue.js"></script> -->
+<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+<script src="./JS/shopcar.js"></script>
+</html>

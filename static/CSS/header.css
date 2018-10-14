@@ -1,0 +1,180 @@
+/***********************
+*******头部导航*******
+***********************/
+.header{
+	width: 100%;
+	height: 220px;
+}
+.headerfull{
+	width: 100%;
+	height: 40px;
+	background:#eeee; 
+}
+.header-top{
+	margin: 0 auto;
+	width: 1400px;
+	height: 40px;
+	background:#eeee;
+}
+.top-left-no{
+	float: left;
+	width: 400px;
+	height: 40px;
+}
+.top-left-no span a{
+	font-size: 13px;
+	line-height: 40px;
+	margin-left: 20px;
+	color:  #7d7d7d;
+}
+.top-left-no span a:hover{
+	color: #4eb525;
+}
+.top-right-no{
+	float: right;
+	width: 170px;
+	height: 40px;
+}
+.top-right-no span a{
+	font-size: 13px;
+	line-height: 40px;
+	text-align: right;
+	margin-left: 5px;
+	color:  #7d7d7d;
+	margin-left: 20px;
+}
+.top-right-no span a:hover{
+	color: #4eb525;
+}
+.top-left{
+	float: left;
+	width: 300px;
+	height: 40px;
+}
+.top-left p{
+	font-size: 13px;
+	line-height: 40px;
+	text-align: left;
+	color:  #7d7d7d;
+}
+.top-right{
+	float: right;
+	width: 456px;
+	height: 40px;
+}
+.top-right span a{
+	font-size: 13px;
+	line-height: 40px;
+	text-align: right;
+	margin-left: 5px;
+	color:  #7d7d7d;
+	margin-left: 20px;
+}
+.top-right span a:hover{
+	color: #4eb525;
+}
+.header-center{
+	margin: 0 auto;
+	width: 1400px;
+	height: 120px;
+	background: white;
+	display: flex;
+	justify-content:space-between; 
+}
+.header-center-logo{
+	width: 310px;
+	height: 120px;
+}
+.header-center-search{
+	width: 400px;
+	height: 120px;
+}
+.header-center-search p{
+	margin-top: 30px;
+	margin-bottom: 6px;
+	font-size: 16px;
+	text-align: center;
+	color:#7d7d7d;
+}
+.header-center-search input[type=text]{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #4eb525;
+	padding-left: 10px;
+}
+.header-center-search input[type=submit]{
+	width: 75px;
+	height: 42px;
+	border: none;
+	background: #4eb525;
+	color: white;
+}
+#hotword,#send{
+	color: red;
+}
+#keyword,#full{
+	color:#4eb525; 
+}
+.nav-ul #allgoods{
+	width: 200px;	
+	height: 60px;
+	color: red;	
+}
+.header-center-add{
+	width: 250px;
+	height: 120px;
+	font-size: 14px;
+}
+.header-center-add p{
+	margin-top: 82px;
+}
+.navbar{
+	width: 100%;
+	height: 60px;
+	background: #4eb525;
+}
+.nav-content{
+	margin: 0 auto;
+	width: 1400px;
+	height: 60px;
+}
+.nav-ul{
+	width: 1100px;
+	height: 60px;
+	float: left;
+}
+.nav-ul li{
+	float: left;
+	width: 150px;
+	height: 60px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+}
+.nav-ul li a{
+	color: white;
+}
+.nav-ul li a:hover{
+	color: darkgreen;
+}
+.nav-car{
+	width: 120px;
+	height: 60px;
+	float: right;
+	line-height: 60px;
+}
+.nav-car li{
+	width: 120px;
+	height: 60px;
+	position: relative;
+	background: #73c328;
+}
+.nav-car a{
+	color: #fdef36;
+	margin-left: 20px;
+}
+#shopcar{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}

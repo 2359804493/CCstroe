@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>purchase</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/base.css">
+    <link rel="stylesheet" type="text/css" href="CSS/header.css">
+    <link rel="stylesheet" type="text/css" href="CSS/purchase.css">
+   
+</head>
+<body>
+<!-- 头部导航开始 -->
+<div class="header" id="header">
+	
+</div>
+<!-- 头部导航结束 -->
+<div class="container">
+	<div class="main-left">
+		<div class="img-main">
+			<img src="img/百香果.png" alt=""><!-- 大图片 -->
+			<div id="mask" class="d-none"></div><!-- 鼠标滑块 -->
+            <div id="super-mask" class=""></div><!-- 大图片位置 -->
+		</div>
+		<div class="img-swiper">
+			<div class="mid-img">
+				<ul>
+					<li><img model="imgL" src="img/柠檬.png" alt=""></li>
+					<li><img model="imgL" src="img/草莓.png" alt=""></li>
+					<li><img model="imgL" src="img/樱桃.png" alt=""></li>
+					<li><img model="imgL" src="img/桑葚.png" alt=""></li> <!-- 小图片切换 -->
+				</ul>	
+			</div>
+		</div>
+		<div class="img-detail">
+			<span><a href="#">☍分享</a></span>
+			<span><a href="#">☆收藏商品 （319139人气）</a></span>
+			<span><a href="#">☎举报</a></span>
+		</div>
+	</div>
+	<div class="main-middle" id="main-middle">  <!-- 商品标题 -->
+		<div class="good-title" id="good-title">
+			<!-- <h3>${title}</h3>
+			<h4>${details}</h4> -->
+		</div>
+		<div class="good-price-con">
+			<div class="good-ticket"><span>购物券</span>  全商城实物商品通用<span><a href="#">去领券</a></span></div>
+			<div class="good-price" id="good-price">
+				<!-- <div class="formale-price">价格<span>￥${former_price}</span></div>
+				<div class="now-price">促销价 <span>￥${price}</span></div> -->
+			</div>
+		</div>
+		<div class="good-details">
+			<div class="freight">运费:<span>广西南宁至 
+				<select>  
+						<option>杭州</option>
+						<option>北京</option> 
+						<option>深圳</option>
+						<option>厦门</option>
+						<option>上海</option>
+				</select> 
+				<select>  
+						<option>东城区</option>
+						<option>萧山区</option> 
+						<option>西湖区</option>
+						<option>下沙区</option>
+				</select> 快递: 0.00</span>
+			</div>
+			<div class="appraise" id="appraise">
+				<!-- <p>月销量<span>${sold_count}</span></p> -->
+				<p>累计评价<span> 12390</span></p>
+				<p>送CC积分<span> 16</span></p>
+			</div>
+			<div class="select">  <!-- 选项和套餐 -->
+				<span>规格</span>
+				<a href="#"><span  class="select-1">1kg-2kg(含)</span></a>
+				<a href="#"><span class="select-2">2kg-3kg(含)</span></a>
+				<a href="#"><span class="select-3">3kg-4kg(含)</span></a>
+			</div>
+			<div class="set-meal" @click.prevent="setMeal()">
+				<span>套餐</span>
+				<a href="#"><span class="meal-1">套餐一</span></a>
+				<a href="#"><span class="meal-2">套餐二</span></a>
+			</div>
+			<div class="good-count">  <!-- 商品选择按钮 -->
+				<span>数量</span>
+				<div class="add">
+					<button class="plus" @click="add">+</button>
+					<input type="text" v-model="value">
+					<button class="reduce" @click="reduce">-</button> 件
+				</div>
+				<div class="good-number" id="good-number">
+					<!-- <span>库存 ${count} 件</span> -->
+				</div>
+			</div>
+		</div>
+		<div class="good-purchase">  
+			<div class="good-purchase-btn">
+				<a class="purchase" href="#">立即购买</a>
+				<a class="add-car" href="#"><img src="img/car.png" alt="">加入购物车</a>
+			</div>
+			<div class="good-promise">
+				<span class="promise">服务承诺</span>
+				<span><a href="#">坏单包退</a></span>
+				<span><a href="#">正品保证</a></span>
+				<span><a href="#">极速退款</a></span>
+			</div>
+			<div class="pay-list">
+				<span class="pay">支付方式</span>
+				<span><a href="#"><img src="img/ant.png" alt=""> 蚂蚁花呗</a></span>
+				<span><a href="#"><img src="img/idCard.png" alt=""> 信用卡支付</a></span>
+				<span><a href="#"><img src="img/jfb.png" alt=""> 集分宝</a></span>
+			</div>
+		</div>		
+	</div>
+
+	<div class="main-right">   <!-- 右边推荐商品轮播图 -->
+		<ul id="right-swiper">
+			<li><img src="img/杨梅.png" alt=""></li>
+			<li><img src="img/樱桃.png" alt=""></li>
+			<li><img src="img/百香果.png" alt=""></li>
+			<li><img src="img/苹果.png" alt=""></li>
+			<li><img src="img/草莓.png" alt=""></li>
+			<li><img src="img/柠檬.png" alt=""></li>
+			<li><img src="img/桑葚.png" alt=""></li>
+			<li><img src="img/菠萝.png" alt=""></li>
+		</ul>
+		<div class="more-good"><span>大家都在买 ↑↑↑</span></div>
+	</div>
+</div>
+
+<div class="details">
+	<div class="details-left">  <!-- 店铺详情 -->
+		<div class="shopName"><a href="#">CC旗舰店</a></div>
+		<div class="shopAge"><span>10</span> 年金冠老店</div>
+		<div class="shopDesc">
+			<div class="shopDesc-1"><span>描述</span><span>服务</span><span>物流</span></div>
+			<div class="shopDesc-2"><span>4.9 ↑</span><span>4.8 ↑</span><span>4.7 ↑</span></div>
+		</div>
+		<div class="shop-button">
+			<span><a href="#">进店逛逛</a></span>
+			<span><a href="#">收藏店铺</a></span>
+		</div>	
+		<div class="shop-search">
+			<div class="search-title"><span>店内搜索</span></div>
+			<div class="search-keyword">关键字：<input type="text"></div>
+			<div class="search-price">价  格：<input type="text" placeholder="￥"> - <input type="text" placeholder="￥"></div>
+		</div>
+		<div class="search-btn"><button>搜索</button></div>
+	</div>	  
+	<div id="my-tabs">   <!-- 选项卡部分 -->
+		<ul class="tabs">
+		  <li class="active"><a data-toggle="tab" href="#content1">宝贝详情</a></li>
+		  <li><a data-toggle="tab" href="#content2">累计评论(999+)</a></li>
+		  <li><a data-toggle="tab" href="#content3">专享服务</a></li>  
+		</ul>
+		<div class="container1">
+			  <div id="content1" class="active">
+			  	<img src="img/detail1.png" alt="">
+			  	<img src="img/detail2.png" alt="">
+			  </div>
+			  <div id="content2">
+			   <img src="img/pinlun.png" alt="">
+			  </div>
+			  <div id="content3">
+				<img src="img/promise.png" alt="">
+			  </div>
+		</div>
+ 	</div>
+</div>
+
+
+<!-- 侧栏导航开始 -->
+	<div class="fix">
+		<div class="fix-con">
+			<ul>
+				<li><a href="#">爱逛好店</a></li>
+				<li><a href="#">联系客服</a></li>
+				<li id="love"><a href="#">猜你喜欢</a></li>
+				<li id="question"><a href="#">问题反馈</a></li>
+				<li style="border-bottom: none"><a href="#">返回顶部</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- 侧栏导航结束 -->
+<script src="JS/vue.js"></script>
+<script src="JS/jquery-3.3.1.min.js"></script>
+<script src="JS/header.js"></script>
+<script src="JS/purchase-Ajax.js"></script>
+<script src="JS/purchase.js"></script>
+</body> 
+</html>

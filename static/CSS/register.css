@@ -1,0 +1,134 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+h1,h3,h4,input,div,p,hr,span{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+.top{
+	width: 1400px;
+	height: 100px;
+	margin: 0 auto;
+}
+.logo a{
+	display: inline-block;
+}
+.logo a img{
+	vertical-align: bottom;
+	height: 100px;	
+}
+.logo a span{
+	font-size: 23px;
+	color: #666;
+}
+.container{
+	width: 100%;
+	background-color: #e1f4d4;
+	height: 500px;	
+	margin-top: 10px;
+}
+.main{
+	width: 1300px;
+	height: 500px;
+	margin: 0 auto;
+}
+.main-left{
+	width: 900px;	
+	height: 500px;	
+	float: left;
+}
+.main-right{
+	width: 310px;	
+	height: 500px;
+	float: right;
+}
+.form{
+	width: 310px;	
+	height: 400px;	
+	margin-top: 50px;
+	border-radius: 5px;
+	background: white;
+}
+.title{
+	width: 310px;	
+	height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #666;
+    text-indent: 15px;
+    margin: 25px auto 30px;
+    padding-top: 20px;
+}
+.title span{
+	float: right;
+	margin-right: 15px;
+	font-size: 15px;
+	font-weight: 500;
+	color:  #4eb525;
+	 font-weight: 500;
+}
+.username,.userpwd,.usercpwd{
+	width: 280px;
+	height: 70px;
+	margin: 0 auto;
+}
+.checkUname,.checkUpwd,.checkUcpwd{
+	width: 280px;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+input[type=text],input[type=password]{
+	border:none;
+	width: 276px;
+	height: 35px;
+	color: #999;
+	background-color: #fff;
+	text-indent:30px;
+	outline: none;
+	border:1px solid  #eee;
+}
+.submit{
+	width: 280px;
+	height: 55px;
+	margin: 0 auto;
+}
+input[type=submit]{
+	border:none;
+	width: 276px;
+	height: 35px;
+	color: #999;
+	background:  #4eb525;
+	color: white;
+	font-size: 16px;
+}
+.check{
+	width: 280px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 12px;	
+}
+.check input[type=checkbox]{
+	vertical-align: middle;
+}
+.check span{
+	vertical-align: middle;
+}
+.check span a{
+	color: blue;
+}
+.checkbox{
+	text-align: center;
+	line-height: 30px;
+}

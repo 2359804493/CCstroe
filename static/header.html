@@ -1,0 +1,63 @@
+<div class="header" >
+		<div class="headerfull" id="headerfull">
+				<!-- 未登录状态栏 -->
+			<div v-if="!islogin" id="login" class="header-top">
+				<div class="top-left-no">
+					<span><a href="#">网站导航</a></span>
+					<span><a href="#">客户服务</a></span>
+					<span><a href="#">商家入驻</a></span>
+				</div>
+				<div class="top-right-no">
+					<span><a href="login.html">Hi~请登录</a></span>
+					<span><a href="register.html">[注册有礼]</a></span>
+				</div>
+			</div>
+				<!-- 登陆成功状态栏 -->
+			<div v-else id="logout" class="header-top">
+				<div class="top-left"><p>您好，欢迎来到CC果子园</p></div>
+				<div class="top-right">
+					<span><a href="index.html">返回首页</a></span>
+					<span><a href="#">我的订单</a></span>
+					<span><a href="#">会员中心</a></span>
+					<span><a href="#">我的果园</a></span>
+					<span><a href="#">手机果园</a></span>
+					<span><a href="#" @click.prevent="logout">退出登录</a></span>
+				</div>
+			</div>
+
+		</div>
+		<div class="header-center">
+			<div class="header-center-logo"><a href="index.html"><img src="img/logo.png"></a></div>
+			<div class="header-center-search">
+				<p><span id="hotword">热点搜索：</span>梨 苹果 <span id="keyword">火龙果 柠檬</span> 牛油果</p>
+				<input @keyup.13="search_btn" type="text" id="search" value='火龙果...' onfocus="if(value=='火龙果...') {value=''}" onblur="if (value=='') {value='火龙果...'}"><input @click="search_btn" type="submit" name="搜索" id="search_btn">
+			</div>
+			<div class="header-center-add">
+				<p><span id="send">送至：</span>
+					<select>  
+						<option>杭州</option>
+						<option>北京</option> 
+						<option>深圳</option>
+						<option>厦门</option>
+						<option>上海</option>
+					</select>
+					<span id="full">全国满一百顺丰包邮</span>
+				</p>		
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="nav-content">
+				<div class="nav-ul">
+					<ul>
+						<li id="allgoods">全部商品分类</li>
+						<li><a href="#">进口水果</a></li>
+						<li><a href="#">国产水果</a></li>
+						<li><a href="#">在线充值</a></li>
+						<li><a href="#">团购配送</a></li>
+						<li><a href="#">其他</a></li>	
+					</ul>
+				</div>
+				<div class="nav-car"><li><a href="shopcar.html">购物车<img id="shopcar" src="img/car.png"></a></li></div>
+			</div>
+		</div>
+	</div>

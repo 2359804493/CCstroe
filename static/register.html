@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="CSS/register.css">
+ </head>
+ <body >
+		<div class="top">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="">
+					<span>| 欢迎注册</span>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+	 		<div class="main">
+	 			<div class="main-left">
+	 				<img src="img/login-banner.png" alt="">
+	 			</div>
+	 			<div class="main-right">
+	 				<div class="form">
+	 					<div class="title">注册CC果园 <span><a href="login.html">登录</a></span></div>
+		 				<div class="username">
+							 <input type="text" id="uname" placeholder="请输入用户名..." onblur="regcheckUname()" onfocus="reminduname()">
+							 <div class="checkUname"><span id="checkUname"></span></div>
+						 </div>			 
+						 <div class="userpwd">
+							  <input type="password" id="upwd" placeholder=" 请输入用户密码..." onblur="regcheckUpwd()" onfocus="remindupwd()">
+							  <div class="checkUpwd"><span id="checkUpwd"></span></div>
+						</div>  
+						<div class="usercpwd">
+							  <input type="password" id="cpwd" placeholder=" 再输入一次密码..." onblur="regcheckcpwd()">
+							  <div class="checkUcpwd"><span id="checkcpwd"></span></div>
+						</div>
+						<div class="check">
+							<div class="checkbox"><input type="checkbox" v-model="agree" name="check" /><span>我已阅读和接受<a href="#">《CC果园用户注册协议》</a></span></div>
+						</div> 
+						<div class="submit">
+							<input @keyup.13="search_btn" :disabled="!agree" type="submit" name="submit" value="注册" id="submit" onclick="register()" >
+						</div>
+					</div>                  
+	 			</div>
+	 		</div> 				 	
+ 	</div>
+ <script src="JS/vue.js"></script>
+ <script src="JS/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="JS/common.js"></script>  
+ <script src="JS/register-Ajax.js"></script>
+
+ </body>
+
+</html>

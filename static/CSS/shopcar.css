@@ -1,0 +1,330 @@
+
+.header{
+	width: 100%;
+	height: 40px;
+	background: #eee;
+}
+.header-con{
+	width: 1400px;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 13px;
+	color: #7d7d7d;
+}
+.header-left{
+	width: auto;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+}	
+.header-right{
+	width: auto;
+	height: 40px;
+	float: right;
+	line-height: 40px;
+}
+.header-con span{
+	margin-right: 20px;
+}
+.search{
+	width: 1400px;
+	height: 120px;
+	margin:auto;
+}
+.search-logo{
+	width: 500px;
+	height: 120px;
+	background: white;
+	float: left;
+}
+.search-logo img{
+	height: 120px;
+	vertical-align: middle;
+}
+.search-logo span{
+	font-size: 25px;
+	font-weight:700;
+	color: black;
+	vertical-align: middle;
+}
+.search-input{
+	width: 650px;
+	height: 120px;
+	float: right;
+	position: relative;
+}
+.search-input input[type=text]{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #4eb525;
+	padding-left: 10px;
+	position: absolute;
+	bottom:30px;
+}
+.search-input input[type=submit]{
+	width: 75px;
+	height: 42px;
+	border: none;
+	background: #4eb525;
+	color: white;
+	position: absolute;
+	bottom:30px;
+	left: 300px;
+}
+.main{
+	width: 1400px;
+	height:auto;
+	margin: 0 auto;
+}
+.title{
+	width: 1400px;
+	height: 50px;
+	font-weight: 700;
+	border-bottom: 3px solid #eee;
+	line-height: 50px;
+}
+.title>span{
+	display: inline-block;
+	height: 50px;
+	width: auto;
+	padding: 0 20px;
+	font-size: 16px;
+    line-height: 50px;
+    color: black;
+    margin-left: 100px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s linear;
+}
+.pay{	
+	float: right;
+	height: 30px;
+	padding: 0 20px;
+	font-size: 12px;
+	color: #666；
+	line-height: 50px;
+}
+.pay button{
+	border:none;
+	background: red;
+	color: white;
+	font-size: 12px;
+	width: 55px;
+	height: 25px;
+	border-radius: 3px;
+	text-align: center;
+}
+.pay i{
+	color: red;
+	margin: 0 10px;
+}
+.title span:nth-child(1){
+	border-bottom: 3px solid red;
+}
+.title span:hover{
+	 border-bottom: 3px solid red;
+}
+.car-item{
+	width: 1400px;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.check-button,.good-price,.good-amount,.good-sum,.operate{
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 13px;
+	color: #666;
+}
+.good-info{
+	width: 500px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+	color: #666;
+	line-height: 50px;
+}
+.check-button input{
+	vertical-align: middle;
+}
+.shop-name{
+	width: 1300px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+.shop-name img{
+	height: 40px;
+	margin-left: 50px;
+	vertical-align: middle;
+}
+.shop-name span{
+	font-size: 13px;
+}
+.man-table{
+	width: 1300px;
+	height: 100px;
+	border:1px solid #ddd;
+	margin:0 auto 10px;
+}
+.main-con{
+	width: 1300px;
+	height: 80px;
+	margin-top: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #666;	
+}
+.good-check{
+	width: 40px;
+	height: 80px;
+	text-align: right;
+	/*background: green;*/
+}
+.good-img{
+	height: 80px;
+	width: 150px;
+	text-align: center;
+	line-height: 80px;
+	/*background: white;*/
+}
+.good-img img{
+	height: 80px;
+	vertical-align: middle;
+}
+.good-detail{
+	height: 80px;
+	width: 300px;
+	/*background: gray;*/
+	text-align: left;
+}
+.good-detail span:hover{
+	color:red;
+}
+.select-box{
+	height: 80px;
+	width: 130px;
+	/*background: gold;*/
+}
+.price-con{
+	height: 80px;
+	width: 120px;
+	/*background: gold;*/
+}
+.now_price{
+	font-size: 15px;
+	font-weight: 500;
+	color: black;
+}
+.former_price{
+	text-decoration: line-through;
+}
+.good-count{
+	height: 80px;
+	width: 230px;
+	/*background: blue;*/
+}
+.add input{
+	width: 35px;
+}
+#count{
+	text-align: center;
+}
+.total{
+	height: 80px;
+	width: 130px;
+	text-align: left;
+	/*background: yellow;*/
+}
+#total-price{
+	color: red;
+	font-size: 18px;
+	font-weight: 700;
+}
+.operate-con{
+	height: 80px;
+	width: 100px;
+	/*background: blue;*/
+}
+.operate-con p a{
+	color: #666;
+} 
+.operate-con p a:hover{
+	color: red;
+}
+.paybar{
+	width: 1300px;
+	height: 50px;
+	margin:0 auto;
+	background: #e5e5e5;
+	font-size: 13px;
+}
+.checkAll{
+	width: 100px;	
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.checkAll input{
+	vertical-align: middle;
+}
+
+.paybar-list{
+	height: 50px;
+	width: 200px;
+	line-height: 50px;
+}
+.paybar-list span{
+	margin-right: 15px;
+}
+.paybar-list span a{
+	color: #666;
+}
+.paybar-list span a:hover{
+	color: red;
+}
+.paybar-left{
+	float: left;
+	height: 50px;
+	width: 300px;
+	display: flex;
+	justify-content: space-around;
+}
+.paybar-right{
+	float: right;
+	height: 50px;
+	width: 400px;
+}
+.paybar-list2{
+	float: right;
+	height: 50px;
+	width: 300px;
+	line-height: 50px;
+}
+.paybar-list2 span a{
+	margin-right: 10px;
+	color: #666;
+}
+.payButton{
+	float: right;
+	height: 50px;
+	width: 100px;
+	line-height: 50px;
+	background: red;
+	text-align: center;
+	border-radius: 3px;
+}
+.payButton a{
+	color: white;
+	font-size: 16px;
+}
+#total-number,#total-price{
+	font-size: 15px;
+	color: red;
+	font-weight: 600;
+}

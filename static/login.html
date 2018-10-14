@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="CSS/login.css">
+ </head>
+ <body >
+		<div class="top">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="">
+					<span>| 欢迎登陆</span>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+	 		<div class="main">
+	 			<div class="main-left">
+	 				<img src="img/login-banner.png" alt="">
+	 			</div>
+	 			<div class="main-right">
+	 				<div class="form">
+	 					<div class="title">登陆CC果园 <span><a href="register.html">注册</a></span></div>
+		 				<div class="username">
+		 					 <img src="img/uname.png" alt="">
+							 <input type="text" id="uname" placeholder="请输入用户名..." onblur="showusername()" 
+							 onfocus="reminduname()">
+							 <div class="showusername"><span id="showusername"></span></div>
+						 </div>			 
+						 <div class="userpwd">
+						 	  <img src="img/pwd.png" alt="">
+							  <input type="password" id="upwd" placeholder=" 请输入用户密码..." onblur="showuserpwd()" onfocus="remindupwd()">
+							  <div class="showuserpwd"><span id="showuserpwd"></span></div>
+						</div>  
+						<div class="check">
+							<div class="checkbox"><input type="checkbox" name="check" /><span>下次自动登录</span></div>
+							<div class="problem"><a href="#">登录遇到问题?</a></div>
+						</div> 
+						<div class="submit">
+							<input type="submit" name="submit" value="登陆" id="submit" onclick="login()">
+						</div>
+						<div class="others">
+							<a href="#"><img src="img/QQ.png" alt=""></a>
+							<a href="#"><img src="img/weixin.png" alt=""></a>
+							<a href="#"><img src="img/zpay.png"></a>
+						</div>
+					</div>                  
+	 			</div>
+	 		</div> 				 	
+ 	</div>
+ 	<script src="JS/jquery-3.3.1.min.js"></script>
+ 	<script type="text/javascript" src="JS/common.js"></script>
+ 	<script src="JS/login-Ajax.js"></script>
+ </body>
+  
+</html>
