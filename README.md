@@ -7,3 +7,5 @@ CCstroe1.0
 
 #运行
 node main.js
+
+http://localhost:3000
